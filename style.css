@@ -1,0 +1,66 @@
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+input {
+  border: 1px solid #555;
+  padding: 10px;
+  font-size: 34px;
+}
+
+h1 {
+  text-align: center;
+}
+.content__list {
+  height: 200px;
+}
+.content__list div {
+  padding: 10px;
+  font-size: 18px;
+  background-color: #2e2e08;
+  color: white;
+  cursor: pointer;
+}
+
+.content__list div:hover {
+  background-color: #474727;
+}
+
+.content__list-added {
+  height: 200px;
+  overflow: auto;
+}
+
+.content__list-added div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background-color: rgb(41 49 57);
+  color: white;
+  margin: 5px;
+  padding: 10px;
+}
+
+.content__list-info {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.content__list-info button {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url(./cross-circle.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 50%;
+  padding: 3px;
+}
