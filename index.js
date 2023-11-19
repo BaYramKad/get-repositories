@@ -19,7 +19,7 @@ const deleteRepo = (element, target) => {
 const addSpan = (element) => {
   contentSearchInput.value = '';
   contentList.innerHTML = '';
-  const addedElement = document.createElement('div');
+  const addedElement = document.createElement('li');
   const spanName = document.createElement('span');
   const spanOwner = document.createElement('span');
   const spanStars = document.createElement('span');
@@ -58,7 +58,7 @@ window.addEventListener('load', () => {
 
 const renderRepositories = (data) => {
   data.forEach((rep) => {
-    let contentListChild = document.createElement('div');
+    let contentListChild = document.createElement('li');
     contentListChild.textContent = rep.name;
     contentList.appendChild(contentListChild);
     contentListChild.addEventListener('click', () => addRepoToList(rep));
